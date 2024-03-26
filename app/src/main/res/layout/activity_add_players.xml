@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".AddPlayers">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/black_border" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TicTacToe"
+                android:textStyle="bold|italic"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="@color/gray"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Player Names"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/etPlayerOne"
+                android:background="@drawable/gray_border"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:hint="Player One Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_xicon"
+                android:drawablePadding="8dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/etPlayerTwo"
+                android:background="@drawable/gray_border"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:maxLines="1"
+                android:hint="Player Two Name"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableLeft="@drawable/ic_oicon"
+                android:drawablePadding="8dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/btnStart"
+                android:textAllCaps="false"
+                android:text="Start Game"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:cornerRadius="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
